@@ -92,7 +92,7 @@ function speakThis(message) {
     }
 
     else if(message.includes('you do') || message.includes('concept') || message.includes('your use')) {
-        const finalText = "I am a service robot who can transport different things, work as a welcome person, or can be used for professional use, etcetera. in future i will be fully automated with AI. I am a small version of mine's";
+        const finalText = "I am a service robot.";
         speech.text = finalText;
     }
 
@@ -140,6 +140,18 @@ function speakThis(message) {
     else if(message.includes('calculator')) {
         window.open('Calculator:///')
         const finalText = "Opening Calculator";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('rock paper scissors') || message.includes('stone paper scissors')) {
+        window.open('sps/index.html')
+        const finalText = "Opening Rock Paper Scissors";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('tic tac toe') || message.includes('kanta zero')) {
+        window.open('ttt/index.html')
+        const finalText = "Opening Tic Tac Toe";
         speech.text = finalText;
     }
 
