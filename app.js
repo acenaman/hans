@@ -149,7 +149,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('tic tac toe') || message.includes('kanta zero')) {
+    else if(message.includes('tic-tac-toe') || message.includes('kanta zero')) {
         window.open('ttt/index.html')
         const finalText = "Opening Tic Tac Toe";
         speech.text = finalText;
