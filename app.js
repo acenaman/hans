@@ -155,7 +155,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('flappy bird')) {
+    else if(message.includes('flappy bird')|| message.includes('flappy Bird')) {
         window.open('https://flappy-bird.co/')
         const finalText = "Opening Flappy Bird";
         speech.text = finalText;
