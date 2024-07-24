@@ -144,14 +144,38 @@ function speakThis(message) {
     }
 
     else if(message.includes('rock paper scissors') || message.includes('stone paper scissors')) {
-        window.open('sps/index.html')
+        window.open('https://www.online-stopwatch.com/chance-games/rock-paper-scissors/')
         const finalText = "Opening Rock Paper Scissors";
         speech.text = finalText;
     }
 
-    else if(message.includes('tic-tac-toe') || message.includes('kanta zero')) {
+    else if(message.includes('tic tac toe') || message.includes('tic-tac-toe')|| message.includes('kanta zero')) {
         window.open('ttt/index.html')
         const finalText = "Opening Tic Tac Toe";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('flappy bird')) {
+        window.open('https://flappy-bird.co/')
+        const finalText = "Opening Flappy Bird";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('quick draw')) {
+        window.open('https://quickdraw.withgoogle.com/')
+        const finalText = "Opening Quick Draw";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('dino game')) {
+        window.open('chrome://dino/')
+        const finalText = "Opening Dino Game";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('semantris')) {
+        window.open('https://research.google.com/semantris/')
+        const finalText = "Opening Semantris";
         speech.text = finalText;
     }
 
